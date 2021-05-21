@@ -25,8 +25,8 @@ app.use(cors());
 app.use(json());
 app.use(logger);
 
-app.use("/", moviesRouter);
-app.use("/users", usersRouter);
+app.use("/api", moviesRouter);
+app.use("/api/users", usersRouter);
 
 app.use(express.static("build"));
 
