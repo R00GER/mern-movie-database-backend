@@ -10,7 +10,7 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 console.log(PORT);
 
-const url = `mongodb+srv://dbUser:TämäOnPitkäJaVaikeaSalasana1@cluster0.zrzb5.mongodb.net/mern-todo-app?retryWrites=true&w=majority`;
+const url = process.env.MONGODB_URI;
 
 mongoose
   .connect(url, {
