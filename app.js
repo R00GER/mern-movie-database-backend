@@ -8,6 +8,7 @@ import logger from "./logger.js";
 const app = express();
 
 const PORT = process.env.PORT || 4000;
+console.log(PORT);
 
 const url = `mongodb+srv://dbUser:TämäOnPitkäJaVaikeaSalasana1@cluster0.zrzb5.mongodb.net/mern-todo-app?retryWrites=true&w=majority`;
 
